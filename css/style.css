@@ -1,0 +1,61 @@
+*{
+     margin: 0;
+}
+
+    #gridwrapper{
+        display: grid;
+       height: 100vh;
+        width: 100vw;
+
+        background: rgb(179, 226, 179);
+
+        grid-template-areas:
+        'he he he he he he'
+        'a1 a1 a1 a1 as as'
+        'a2 a2 a2 a2 as as'
+        'a2 a2 a2 a2 as as'
+        'a2 a2 a2 a2 as as'
+        'a3 a3 a3 a3 as as'
+        'fo fo fo fo fo fo'
+        ;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat (8, 1fr);
+        grid-gap: 10px;
+    }
+
+    .header{
+    grid-area: he;
+    background: rgb(160, 230, 230);
+         }
+
+
+
+    .article1{
+        grid-area: a1;
+        background: rgb(237, 140, 140);
+}
+
+    .article2{
+        grid-area: a2;
+        background: rgb(237, 140, 140);
+}
+
+    .article3{
+        grid-area: a3;
+        background: rgb(237, 140, 140);
+}
+
+
+    
+    .aside{
+        grid-area: as;
+        background: rgb(181, 226, 181
+        );
+}
+
+
+
+    .footer{
+    grid-area: fo;
+     background:rgb(226, 181, 226);
+    }
